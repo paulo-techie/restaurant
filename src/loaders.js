@@ -15,17 +15,7 @@ export function loadPage() {
   loadContact();
 }
 
-export function loadNavActions() {
-  const aboutBtn = document.getElementById('aboutbutton');
-  const menuBtn = document.getElementById('menubutton');
-  const contactBtn = document.getElementById('contactbutton');
-
-  aboutBtn.addEventListener('click', event => { loadTab(event, 'aboutus'); });
-  menuBtn.addEventListener('click', event => { loadTab(event, 'menu'); });
-  contactBtn.addEventListener('click', event => { loadTab(event, 'contactus'); });
-}
-
-function loadTab(evt, tabName) {
+export function loadTab(evt, tabName) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
