@@ -1,39 +1,53 @@
-
 export function loadPage() {
-  document.getElementById("content").innerHTML =
-    '<div class="tab">\
-    <button class="tablinks" id="aboutbutton">About</button>\
-    <button class="tablinks" id="menubutton">Menu</button>\
-    <button class="tablinks" id="contactbutton">Contact</button>\
-    </div>\
-    <!-- Tab content -->\
-    <div id="aboutus" class="tabcontent"></div>\
-    <div id="menu" class="tabcontent"></div>\
-    <div id="contactus" class="tabcontent"></div>';
+  const content = document.getElementById("content");
+  const h1 = document.createElement('h1');
+  const h2 = document.createElement('h2');
+  h1.textContent = 'Furaha Restaurant';
+  h2.textContent = '\"Best place to eat in town\"'
+  content.appendChild(h1);
+  content.appendChild(h2);
+
+  const tabcontainer = document.createElement('div');
+  tabcontainer.classList.add('tab');
+
+  content.appendChild(tabcontainer);
+
+  const aboutbutton = document.createElement('button');
+  aboutbutton.innerText = 'About';
+  aboutbutton.classList.add('tablinks');
+  aboutbutton.id = 'aboutBtn';
+
+  const menubutton = document.createElement('button');
+  menubutton.innerText = 'Menu';
+  menubutton.classList.add('tablinks');
+  menubutton.id = 'menuBtn';
+  
+  const contactbutton = document.createElement('button');
+  contactbutton.innerText = 'Contact';
+  contactbutton.classList.add('tablinks');
+  contactbutton.id = 'contactBtn';
+
+  tabcontainer.appendChild(aboutbutton);
+  tabcontainer.appendChild(menubutton);
+  tabcontainer.appendChild(contactbutton);
+
+  let aboutTab = document.createElement('div');
+  aboutTab.classList.add('tabcontent');
+  aboutTab.id = 'aboutus';
+  let menuTab = document.createElement('div');
+  menuTab.classList.add('tabcontent');
+  menuTab.id = 'menu';
+  let contactTab = document.createElement('div');
+  contactTab.classList.add('tabcontent');
+  contactTab.id = 'contactus';
+
+  content.appendChild(aboutTab);
+  content.appendChild(menuTab);
+  content.appendChild(contactTab);
+
   loadAbout();
   loadMenu();
   loadContact();
-}
-
-export function loadTab(evt, tabName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
-
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
 }
 
 function loadAbout() {
