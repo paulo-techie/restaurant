@@ -1,6 +1,6 @@
 # Restaurant
 
-> A simple javascript page to unpack webpack ...
+> A simple Javascript page to unleash DOM and unpack webpack ...
 
 ![screenshot](./app_screenshot.png)
 
