@@ -24,6 +24,6 @@ const aboutBtn = document.getElementById('aboutBtn');
 const menuBtn = document.getElementById('menuBtn');
 const contactBtn = document.getElementById('contactBtn');
 
-aboutBtn.addEventListener('click', (event) => { loadTab(event, 'aboutus'); });
-menuBtn.addEventListener('click', (event) => { loadTab(event, 'menu'); });
-contactBtn.addEventListener('click', (event) => { loadTab(event, 'contactus'); });
+aboutBtn.addEventListener('click', (event) => loadTab(event, 'aboutus') );
+menuBtn.addEventListener('click', (event) => loadTab(event, 'menu') );
+contactBtn.addEventListener('click', (event) => loadTab(event, 'contactus') );
