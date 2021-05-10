@@ -1,5 +1,5 @@
 export default function loadPage() {
-  const content = document.getElementById("content");
+  const content = document.getElementById('content');
   const h1 = document.createElement('h1');
   const h2 = document.createElement('h2');
 
@@ -32,13 +32,13 @@ export default function loadPage() {
   tabcontainer.appendChild(menubutton);
   tabcontainer.appendChild(contactbutton);
 
-  let aboutTab = document.createElement('div');
+  const aboutTab = document.createElement('div');
   aboutTab.classList.add('tabcontent');
   aboutTab.id = 'aboutus';
-  let menuTab = document.createElement('div');
+  const menuTab = document.createElement('div');
   menuTab.classList.add('tabcontent');
   menuTab.id = 'menu';
-  let contactTab = document.createElement('div');
+  const contactTab = document.createElement('div');
   contactTab.classList.add('tabcontent');
   contactTab.id = 'contactus';
 
@@ -55,7 +55,7 @@ function loadAbout() {
   let menuItemTitle = document.createElement('h3');
   let menuItemBody = document.createElement('p');
   let tabcontent = document.getElementById("aboutus");
-  menuItemTitle.textContent = "About Us";
+  menuItemTitle.textContent = 'About Us';
   menuItemBody.textContent = 'We are a small start-up restaurant ' +
     'offering convenient and affordable meals to our clients';
   tabcontent.appendChild(menuItemTitle);
@@ -75,7 +75,7 @@ function loadMenu() {
     'and cilantro. Topped with sliced avocado.'
   tabcontent.appendChild(menuItemTitle);
   tabcontent.appendChild(menuItemBody);
-  tabcontent.style.display = "none";
+  tabcontent.style.display = 'none';
 }
 
 function loadContact() {
@@ -83,8 +83,8 @@ function loadContact() {
   let menuItemBody = document.createElement('p');
   let tabcontent = document.getElementById("contactus");
   menuItemTitle.textContent = 'Contact Us';
-  menuItemBody.textContent = 'We are located Plainsview Plaza, Mombasa Road, Nairobi.'
+  menuItemBody.textContent = 'We are located at Plainsview Plaza off Mombasa Road in Nairobi.'
   tabcontent.appendChild(menuItemTitle);
   tabcontent.appendChild(menuItemBody);
-  tabcontent.style.display = "none";
+  tabcontent.style.display = 'none';
 }
