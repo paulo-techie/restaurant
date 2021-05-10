@@ -3,13 +3,13 @@ import loadPage from './loaders';
 function loadTab(evt, tabName) {
   // Get all elements with class="tabcontent" and hide them
   const tabcontent = document.getElementsByClassName('tabcontent');
-  for (let i = 0; i < tabcontent.length; i++) {
+  for (let i = 0; i < tabcontent.length; i+=1) {
     tabcontent[i].style.display = 'none';
   }
 
   // Get all elements with class="tablinks" and remove the class "active"
   const tablinks = document.getElementsByClassName('tablinks');
-  for (let i = 0; i < tablinks.length; i++) {
+  for (let i = 0; i < tablinks.length; i+=1) {
     tablinks[i].className = tablinks[i].className.replace(' active', '');
   }
 
@@ -17,7 +17,6 @@ function loadTab(evt, tabName) {
   document.getElementById(tabName).style.display = 'block';
   evt.currentTarget.className += ' active';
 }
-
 
 loadPage();
 
