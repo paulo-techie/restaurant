@@ -1,4 +1,4 @@
-export function loadPage() {
+export default function loadPage() {
   const content = document.getElementById("content");
   const h1 = document.createElement('h1');
   const h2 = document.createElement('h2');
@@ -56,7 +56,7 @@ function loadAbout() {
   let menuItemBody = document.createElement('p');
   let tabcontent = document.getElementById("aboutus");
   menuItemTitle.textContent = "About Us";
-  menuItemBody.textContent = 'We are a small start-up restaurant located ' +
+  menuItemBody.textContent = 'We are a small start-up restaurant ' +
     'offering convenient and affordable meals to our clients';
   tabcontent.appendChild(menuItemTitle);
   tabcontent.appendChild(menuItemBody);
@@ -69,10 +69,10 @@ function loadMenu() {
   menuItemTitle.textContent = 'Menu';
   menuItemBody.textContent = 'Breakfast\r\nToast, bacon, sausages, eggs, black pudding,' +
   'baked beans, tomatoes, mushrooms and a mug of coffee or tea.\r\n\r\n' +
-  'Lunch\r\nToast, bacon, sausages, eggs, black pudding,' +
-  'baked beans, tomatoes, mushrooms and a mug of coffee or tea.\r\n\r\n' +
-  'Dinner\r\nToast, bacon, sausages, eggs, black pudding,' +
-  'baked beans, tomatoes, mushrooms and a mug of coffee or tea.'
+    'Lunch\r\nMouthwatering chunks of Certified Angus Beef brisket, juicy pork or chunks of delicious' +
+    'polish sausage served with coleslaw, French fries, Texas toast and pickles.\n\r\n' +
+    'Dinner\r\nGrilled Chicken. Served with leftover brown rice seasoned with salt, pepper, ' +
+    'and cilantro. Topped with sliced avocado.'
   tabcontent.appendChild(menuItemTitle);
   tabcontent.appendChild(menuItemBody);
   tabcontent.style.display = "none";

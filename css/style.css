@@ -5,11 +5,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
-h1, 
+h1,
 h2 {
   margin: 0;
   padding: 0;
-  color: #D50000;
+  color: #d50000;
   padding-top: 2%;
   font-weight: 900;
 }
