@@ -20,6 +20,10 @@ h2 {
   font-style: italic;
 }
 
+p {
+  white-space: pre-wrap;
+}
+
 /* Style the tab */
 
 .container {

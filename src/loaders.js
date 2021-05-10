@@ -2,6 +2,7 @@ export function loadPage() {
   const content = document.getElementById("content");
   const h1 = document.createElement('h1');
   const h2 = document.createElement('h2');
+
   h1.textContent = 'Furaha Restaurant';
   h2.textContent = '\"Best place to eat in town\"'
   content.appendChild(h1);
@@ -23,7 +24,7 @@ export function loadPage() {
   menubutton.id = 'menuBtn';
   
   const contactbutton = document.createElement('button');
-  contactbutton.innerText = 'Contact';
+  contactbutton.innerText = ('Contact');
   contactbutton.classList.add('tablinks');
   contactbutton.id = 'contactBtn';
 
@@ -51,20 +52,39 @@ export function loadPage() {
 }
 
 function loadAbout() {
-  document.getElementById("aboutus").innerHTML = "<h3>About Us</h3>\
-  <p>About Us<p>";
+  let menuItemTitle = document.createElement('h3');
+  let menuItemBody = document.createElement('p');
+  let tabcontent = document.getElementById("aboutus");
+  menuItemTitle.textContent = "About Us";
+  menuItemBody.textContent = 'We are a small start-up restaurant located ' +
+    'offering convenient and affordable meals to our clients';
+  tabcontent.appendChild(menuItemTitle);
+  tabcontent.appendChild(menuItemBody);
 }
 
 function loadMenu() {
-  let tabcontent = document.getElementById("menu")
-  tabcontent.innerHTML = "<h3>Menu</h3>\
-  <p>Breakfast.Lunch.Dinner</p>";
+  let menuItemTitle = document.createElement('h3');
+  let menuItemBody = document.createElement('p');
+  let tabcontent = document.getElementById("menu");
+  menuItemTitle.textContent = 'Menu';
+  menuItemBody.textContent = 'Breakfast\r\nToast, bacon, sausages, eggs, black pudding,' +
+  'baked beans, tomatoes, mushrooms and a mug of coffee or tea.\r\n\r\n' +
+  'Lunch\r\nToast, bacon, sausages, eggs, black pudding,' +
+  'baked beans, tomatoes, mushrooms and a mug of coffee or tea.\r\n\r\n' +
+  'Dinner\r\nToast, bacon, sausages, eggs, black pudding,' +
+  'baked beans, tomatoes, mushrooms and a mug of coffee or tea.'
+  tabcontent.appendChild(menuItemTitle);
+  tabcontent.appendChild(menuItemBody);
   tabcontent.style.display = "none";
 }
 
 function loadContact() {
-  let tabcontent = document.getElementById("contactus")
-  tabcontent.innerHTML = "<h3>Contact Us</h3>\
-  <p>Thames River Road, London.</p>";
+  let menuItemTitle = document.createElement('h3');
+  let menuItemBody = document.createElement('p');
+  let tabcontent = document.getElementById("contactus");
+  menuItemTitle.textContent = 'Contact Us';
+  menuItemBody.textContent = 'We are located Plainsview Plaza, Mombasa Road, Nairobi.'
+  tabcontent.appendChild(menuItemTitle);
+  tabcontent.appendChild(menuItemBody);
   tabcontent.style.display = "none";
 }
