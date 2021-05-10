@@ -22,7 +22,7 @@ export default function loadPage() {
   menubutton.innerText = 'Menu';
   menubutton.classList.add('tablinks');
   menubutton.id = 'menuBtn';
-  
+
   const contactbutton = document.createElement('button');
   contactbutton.innerText = ('Contact');
   contactbutton.classList.add('tablinks');
@@ -45,11 +45,11 @@ export default function loadPage() {
   content.appendChild(aboutTab);
   content.appendChild(menuTab);
   content.appendChild(contactTab);
-  
+
   function loadAbout() {
     const menuItemTitle = document.createElement('h3');
     const menuItemBody = document.createElement('p');
-    const tabcontent = document.getElementById("aboutus");
+    const tabcontent = document.getElementById('aboutus');
     menuItemTitle.textContent = 'About Us';
     menuItemBody.textContent = 'We are a small start-up restaurant '
       + 'offering convenient and affordable meals to our clients';
