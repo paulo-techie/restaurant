@@ -24,13 +24,23 @@
 [Live Demo Link](https://raw.githack.com/paulo-techie/restaurant/feature-webpack/index.html)
 
 
-### Usage
+### How to use
 
 To get a local copy up and running follow these simple steps:
 
 Clone or download https://github.com/paulo-techie/restaurant files to your working folder
 
-Open index.html in the restaurant 'dist' directory/folder using your preferred browser.
+In your working folder open Terminal and run the following commands:
+
+cd restaurant 
+
+npm install
+
+npm start
+
+cd dist
+
+open index.html
 
 
 ## Author
