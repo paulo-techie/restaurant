@@ -33,13 +33,17 @@ Clone or download https://github.com/paulo-techie/restaurant files to your worki
 In your working folder open Terminal and run the following commands:
 ```
 cd restaurant 
-
+```
+```
 npm install
-
+```
+```
 npm start
-
+```
+```
 cd dist
-
+```
+```
 open index.html
 ```
 
