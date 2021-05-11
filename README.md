@@ -12,32 +12,16 @@
 - Javascript
 - Telegram
 
+
 ## Others
 
 - Node.js
 - Webpack
 
 
-## Getting Started
+## Live Demo
 
-To get a local copy up and running follow these simple steps:
-
-
-Clone or download https://github.com/paulo-techie/restaurant files to your working folder
-Open index.html on your browser
-
-
-### Installation 
-
-Run the following commands:
-
-pkg install node
-
-npm install --save-dev webpack-cli
-
-Move to the working folder and run:
-
-npm webpack
+[Live Demo Link](https://raw.githack.com/paulo-techie/restaurant/feature-webpack/index.html)
 
 
 ### Usage
@@ -53,19 +37,21 @@ Open index.html on the restaurant directory/folder using your preferred browser.
 
 👤 Paul Omondi
 
-- Github: [@paulo-techie](https://github.com/githubhandle)
-- Linkedin: [@paul-o-43051a31](https://www.linkedin.com/in/paul-o-43051a31/)
+- Github: [@paulo-techie](https://github.com/paulo-techie)
+- Linkedin: [@paulo-techie](https://www.linkedin.com/in/paulo-techie/)
 
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](../../issues/).
+
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
 
 ## Acknowledgments
 
@@ -73,6 +59,7 @@ Give a ⭐️ if you like this project!
 - Inspiration
 - etc
 
+
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is  [MIT](./MIT.md) licensed.
