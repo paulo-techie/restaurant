@@ -10,7 +10,6 @@
 - HTML5
 - CSS3
 - Javascript
-- Telegram
 
 
 ## Others
