@@ -30,7 +30,7 @@ To get a local copy up and running follow these simple steps:
 
 Clone or download https://github.com/paulo-techie/restaurant files to your working folder
 
-Open index.html on the restaurant directory/folder using your preferred browser.
+Open index.html in the restaurant 'dist' directory/folder using your preferred browser.
 
 
 ## Author
